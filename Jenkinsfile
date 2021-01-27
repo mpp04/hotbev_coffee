@@ -1,5 +1,10 @@
 pipeline {
     agent { label 'master' }
+    tools {
+        git 'git'
+        maven 'maven'
+        jdk 'java8'
+    }
     stages {
         stage('Pull Repo') {
             steps {
