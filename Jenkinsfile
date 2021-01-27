@@ -8,7 +8,8 @@ pipeline {
     stages {
         stage('Pull Repo') {
             steps {
-                git 'https://github.com/mpp04/hotbev_coffee.git'
+                //git 'https://github.com/mpp04/hotbev_coffee.git'
+                bat 'git clone https://github.com/mpp04/hotbev_coffee.git'
                 }
         }
         stage('Build and Push using Docker') {

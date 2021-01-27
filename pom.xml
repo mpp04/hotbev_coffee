@@ -12,8 +12,8 @@
     <groupId>com.revature</groupId>
     <artifactId>HotBevCoffee</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Coffee</name>
-    <description>Hot Bev project Coffees</description>
+    <name>HotBev_Coffee</name>
+    <description>[Project] Hot Bev Coffees [ Service ] Coffee Backend</description>
 
     <properties>
         <java.version>1.8</java.version>
