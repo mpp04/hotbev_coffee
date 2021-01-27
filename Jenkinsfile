@@ -14,16 +14,4 @@ pipeline {
         }
 
     }
-    agent { label 'slave' }
-    stages {
-        stage('Pull Image') {
-            steps {
-
-                sh 'docker pull mpp04/coffee_service'
-                sh 'docker -d -p 8091:8091 mpp04/coffee_service'
-
-
-            }
-        }
-    }
 }
