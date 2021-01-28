@@ -24,9 +24,6 @@ pipeline {
             agent {
                 label 'slave'
             }
-            tools {
-                git 'git_slave'
-            }
             steps {
                 sh 'echo $HOME' //ensure user ubuntu and jenkins are added to sudoers file
                 // sh 'sudo service docker restart'
