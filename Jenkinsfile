@@ -32,6 +32,7 @@ pipeline {
                 sh "sudo docker login -u $env.DOCKER_USR -p $env.DOCKER_PWD"
                 sh 'sudo docker pull mpp04/hotbev_coffee'
                 sh 'sudo docker run -d -p 8091:8091 --name coffee mpp04/hotbev_coffee'
+                // test
             }
         }
     }
